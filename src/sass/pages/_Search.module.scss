@@ -1,0 +1,38 @@
+@import "../helpers/colors";
+
+.search {
+    display: flex;
+    padding: 7px 12px 7px 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: $whiteSmoke;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: $whiteSmoke
+}
+
+@media (max-width: 1175px) {
+    .search {
+        position: absolute;
+        left: 50%;
+        top: 80px;
+        transform: translateX(-50%);
+        width: calc(100% - 60px);
+        transition: all .3s ease-in-out;
+        z-index: 999;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .showSearch {
+        display: none !important;
+    }
+}

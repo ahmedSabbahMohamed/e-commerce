@@ -1,0 +1,29 @@
+@import "../helpers/colors";
+
+.mobileMenu {
+    position: fixed;
+    min-height: 100vh;
+    top: 0;
+    right: -45%;
+    width: 45%;
+    background-color: $black;
+    padding: 16px 16px 0 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1000;
+}
+
+.close {
+    text-align: right;
+    img {
+        cursor: pointer;
+    }
+}
+
+.mobileMenu nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    color: $white;
+    &:hover {
+        opacity: .7;
+    }
+}
