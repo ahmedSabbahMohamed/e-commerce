@@ -1,2 +1,16 @@
 @import "../sass/layout/normalize";
-@import "../sass/layout/globalRules"
+@import "../sass/layout/globalRules";
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1175px) {
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
