@@ -1,23 +1,45 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
 import logo from "@/assets/images/Logo.svg"
 import search from "@/assets/images/search.svg"
 import cart from "@/assets/images/cart.svg"
 import wishlist from "@/assets/images/Wishlist.svg"
+import menu from "@/assets/images/menu.svg"
+import styles from "@/sass/pages/_Header.module.scss"
+import Search from "./Search"
+import MobileMenu from "./MobileMenu"
 
 function Header() {
+
+    // TOGGLE SEARCH BAR
+    const toggleSearchbar = () => {
+        let hiddenSearch = document.querySelector("._Search_search__Hfs9A")
+        hiddenSearch.classList.toggle("_Search_showSearch__Syxer")
+    }
+
+    // TOGGLE MENU
+    const toggleMenu = () => {
+        let myMenu = document.querySelector("#mobileMenu")
+        myMenu.style.right = "0"
+    }
+
   return (
     // START HEADER
-    <header>
+    <header className={styles.myHeader}>
 
         {/* CONTENT */}
-        <div className="">
+        <div className={styles.headerContent}>
+
             {/* LEFT */}
-            <div className="right">
+            <div className={styles.left}>
 
                 {/* LOGO */}
                 <div className="logo">
-                    <Image src={ logo } alt="logo" />
+                    <Link href={"/"}>
+                        <Image src={ logo } alt="logo" />
+                    </Link>
                 </div>
 
                 {/* NAV LINKS */}
@@ -27,40 +49,56 @@ function Header() {
                             <Link href={"/"}>Home</Link>
                         </li>
                         <li>
-                            <Link href={"/"}>Contact</Link>
+                            <Link href={"/contact"}>Contact</Link>
                         </li>
                         <li>
-                            <Link href={"/"}>About</Link>
+                            <Link href={"/about"}>About</Link>
                         </li>
                         <li>
-                            <Link href={"/"}>Sign Up</Link>
+                            <Link href={"/signup"}>SignUp</Link>
                         </li>
                     </ul>
                 </nav>
             </div>
 
+            {/* center */}
+            <div className={styles.center}>
+
+                {/* SMALL SCREEN ICONS */}
+                <Image onClick={e => toggleSearchbar(e)} src={search} alt="search" />
+                <Image src={wishlist} alt="wishlist-icon" />
+                <Image src={cart} alt="cart-icon" />
+            </div>
+
             {/* RIGHT */}
-            <div>
+            <div className={styles.right}>
 
-                {/* SEARCH */}
-                <div className="search">
-                    <input type="text" name="text" id="text" placeholder="What are you looking for?" />
-                    <span className="search-icon">
-                        <Image src={search} alt="search-icon" />
-                    </span>
+                {/* LARGE SCREENS */}
+                <div className={styles.large}>
+
+                    {/* SEARCH */}
+                    <Search />
+
+                    {/* ICONS */}
+                    <div className={styles.icons}>
+
+                        {/* WISHLIST */}
+                        <Image src={wishlist} alt="wichlist-icon" />
+
+                        {/* CART */}
+                        <Image src={cart} alt="cart-icon" />
+                    </div>
                 </div>
 
-                {/* WISHLIST */}
-                <div>
-                    <Image src={wishlist} alt="wichlist-icon" />
-                </div>
-
-                {/* CART */}
-                <div className="">
-                    <Image src={cart} alt="cart-icon" />
+                {/* BURGER ICON */}
+                <div className={styles.small}>
+                    <Image onClick={e => toggleMenu(e)} src={menu} alt="menu-icon" />
                 </div>
             </div>
         </div>
+
+        {/* MOBILE NAV */}
+        <MobileMenu />
     </header>
   )
 }
