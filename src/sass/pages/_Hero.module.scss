@@ -1,0 +1,17 @@
+@import "../helpers/colors";
+
+.heroSection {
+    margin-top: 56px;
+}
+
+.heroContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+    .heroContent {
+        flex-direction: column;
+        gap: 35px;
+    }
+}
