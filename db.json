@@ -1,0 +1,51 @@
+{
+    "filter": [
+        {
+            "page": "Women's fashion"
+        },
+        {
+            "page": "Men's fashion"
+        },
+        {
+            "page": "Electronics"
+        },
+        {
+            "page": "Home & Lifestyle"
+        },
+        {
+            "page": "Sports & Outdoor"
+        },
+        {
+            "page": "Baby’s & Toys"
+        },
+        {
+            "page": "Health & Beauty"
+        }
+    ],
+    "slider": [
+        {
+            "id": 1,
+            "image": "https://images.pexels.com/photos/7671168/pexels-photo-7671168.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "discount": "Up to 10% off Voucher",
+            "link": "/"
+        },
+        {
+            "id": 2,
+            "image": "https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "discount": "Up to 20% off Voucher",
+            "link": "/"
+        },
+        {
+            "id": 3,
+            "image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "discount": "Up to 23% off Voucher",
+            "link": "/"
+        },
+        {
+            "id": 4,
+            "image": "https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "discount": "Up to 40% off Voucher",
+            "link": "/"
+        }
+    ]
+}
