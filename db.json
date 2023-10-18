@@ -47,5 +47,55 @@
             "discount": "Up to 40% off Voucher",
             "link": "/"
         }
+    ],
+    "today": [
+        {
+            "id": 1,
+            "image": "https://images.pexels.com/photos/12719131/pexels-photo-12719131.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "title": "HAVIT HV-G92 Gamepad",
+            "price1": 120,
+            "price2": 160,
+            "discount": -40
+        },
+        {
+            "id": 2,
+            "image": "https://images.pexels.com/photos/671629/pexels-photo-671629.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "title": "AK-900 Wired Keyboard",
+            "price1": 960,
+            "price2": 1160,
+            "discount": -35
+        },
+        {
+            "id": 3,
+            "image": "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "title": "IPS LCD Gaming Monitor",
+            "price1": 370,
+            "price2": 400,
+            "discount": -30
+        },
+        {
+            "id": 4,
+            "image": "https://images.pexels.com/photos/2258083/pexels-photo-2258083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title": "S-Series Comfort Chair ",
+            "price1": 376,
+            "price2": 400,
+            "discount": -25
+        },
+        {
+            "id": 5,
+            "image": "https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title": "S-Series Comfort Chair ",
+            "price1": 475,
+            "price2": 400,
+            "discount": -25
+        },
+        {
+            "id": 6,
+            "image": "https://images.pexels.com/photos/6782466/pexels-photo-6782466.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "title": "S-Series Comfort Chair ",
+            "price1": 375,
+            "price2": 400,
+            "discount": -25
+        }
     ]
 }
