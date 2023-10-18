@@ -1,0 +1,32 @@
+@import "../helpers/colors";
+
+.today {
+    display: flex;
+    height: 103px;
+    width: 211px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    h2 {
+        color: $red;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        
+    }
+}
+
+.flashSails {
+    color: $black;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: 1.44px;
+}
