@@ -1,0 +1,63 @@
+@import "../helpers/colors";
+
+.footer {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    min-height: 440px;
+    padding: 80px 0px 24px 0px;
+    align-items: center;
+    gap: 60px;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 87px;
+    & > * {
+        color: $whiteSmoke;
+    }
+    a {
+        color: $whiteSmoke;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px; /* 140% */ 
+        margin-bottom: 24px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        li {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+    }
+}
+
+.exclusive {
+    h1 {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    h4 {
+        margin-bottom: 24px;
+    }
+}
+
+.support {
+    color: $whiteSmoke;
+}
+
+.copyright {
+    p {
+        color: $white;
+        img {
+            margin-right: 10px;
+        }
+    }
+}

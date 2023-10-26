@@ -1,0 +1,80 @@
+@import "../helpers/colors";
+
+.content {
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 500px;
+    margin-bottom: 71px;
+    .left {
+        padding: 69px 56px;
+        p {
+            color: $green;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px; /* 125% */
+            margin-bottom: 32px;
+        }
+        h2 {
+            max-width: 443px;
+            color: $whiteSmoke;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px; /* 125% */
+            letter-spacing: 1.92px;
+            margin-bottom: 32px;
+        }
+        .buyNow {
+            button {
+                all: unset;
+                padding: 16px 48px;
+                text-align: center;
+                background: $green;
+                color: $whiteSmoke;
+            }
+        }
+    }
+    .right {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 44px;
+        .blur {
+            position: absolute;
+            width: 504px;
+            height: 500px;
+            flex-shrink: 0;
+            border-radius: 504px;
+            opacity: 0.3;
+            background: $blur;
+            filter: blur(100px);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column-reverse;
+        height: auto;
+        padding-top: 37px;
+        .left {
+            text-align: center;
+            h2 {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .right {
+            padding: 0 20px;
+            .blur {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
