@@ -25,25 +25,25 @@
     "slider": [
         {
             "id": 1,
-            "image": "https://images.pexels.com/photos/7671168/pexels-photo-7671168.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "image": "jsonImages/laptop.webp",
             "discount": "Up to 10% off Voucher",
             "link": "/"
         },
         {
             "id": 2,
-            "image": "https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "image": "jsonImages/mobile.webp",
             "discount": "Up to 20% off Voucher",
             "link": "/"
         },
         {
             "id": 3,
-            "image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "image": "jsonImages/shirt.webp",
             "discount": "Up to 23% off Voucher",
             "link": "/"
         },
         {
             "id": 4,
-            "image": "https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "image": "jsonImages/sneaker.jpeg",
             "discount": "Up to 40% off Voucher",
             "link": "/"
         }
@@ -51,7 +51,7 @@
     "today": [
         {
             "id": 1,
-            "image": "https://images.pexels.com/photos/12719131/pexels-photo-12719131.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "image": "jsonImages/gameCard.svg",
             "title": "HAVIT HV-G92 Gamepad",
             "price1": 120,
             "price2": 160,
@@ -59,7 +59,7 @@
         },
         {
             "id": 2,
-            "image": "https://images.pexels.com/photos/671629/pexels-photo-671629.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "image": "jsonImages/keyboard.svg",
             "title": "AK-900 Wired Keyboard",
             "price1": 960,
             "price2": 1160,
@@ -67,7 +67,7 @@
         },
         {
             "id": 3,
-            "image": "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "image": "jsonImages/pc.svg",
             "title": "IPS LCD Gaming Monitor",
             "price1": 370,
             "price2": 400,
@@ -75,7 +75,7 @@
         },
         {
             "id": 4,
-            "image": "https://images.pexels.com/photos/2258083/pexels-photo-2258083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "image": "jsonImages/chair1.svg",
             "title": "S-Series Comfort Chair ",
             "price1": 376,
             "price2": 400,
@@ -83,7 +83,7 @@
         },
         {
             "id": 5,
-            "image": "https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "image": "jsonImages/chair2.png",
             "title": "S-Series Comfort Chair ",
             "price1": 475,
             "price2": 400,
@@ -91,11 +91,173 @@
         },
         {
             "id": 6,
-            "image": "https://images.pexels.com/photos/6782466/pexels-photo-6782466.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "image": "jsonImages/chair3.png",
             "title": "S-Series Comfort Chair ",
             "price1": 375,
             "price2": 400,
             "discount": -25
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "icon": "jsonImages/phone.svg",
+            "text": "Phones"
+        },
+        {
+            "id": 2,
+            "icon": "jsonImages/computer.svg",
+            "text": "Computers"
+        },
+        {
+            "id": 3,
+            "icon": "jsonImages/watch.svg",
+            "text": "SmartWatch"
+        },
+        {
+            "id": 4,
+            "icon": "jsonImages/camera.svg",
+            "text": "Camera"
+        },
+        {
+            "id": 5,
+            "icon": "jsonImages/headphone.svg",
+            "text": "HeadPhones"
+        },
+        {
+            "id": 6,
+            "icon": "jsonImages/game.svg",
+            "text": "Gameing"
+        }
+    ],
+    "bestSelling": [
+        {
+            "id": 1,
+            "image": "jsonImages/sweater.svg",
+            "title": "The north coat",
+            "price1": 260,
+            "price2": 360
+        },
+        {
+            "id": 2,
+            "image": "jsonImages/handbag.svg",
+            "title": "Gucci duffle bag",
+            "price1": 960,
+            "price2": 1160
+        },
+        {
+            "id": 3,
+            "image": "jsonImages/gammaxx.svg",
+            "title": "RGB liquid CPU Cooler",
+            "price1": 160,
+            "price2": 140070
+        },
+        {
+            "id": 4,
+            "image": "jsonImages/table.svg",
+            "title": "Small BookSelf",
+            "price1": 360,
+            "price2": ""
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "image": "jsonImages/dog.svg",
+            "title": "Breed Dry Dog Food",
+            "price": 100
+        },
+        {
+            "id": 2,
+            "image": "jsonImages/product-camera.svg",
+            "title": "CANON EOS DSLR Camera",
+            "price": 360
+        },
+        {
+            "id": 3,
+            "image": "jsonImages/product-laptop.svg",
+            "title": "ASUS FHD Gaming Laptop",
+            "price": 700
+        },
+        {
+            "id": 4,
+            "image": "jsonImages/curology.svg",
+            "title": "Curology Product Set ",
+            "price": 500
+        },
+        {
+            "id": 5,
+            "image": "jsonImages/car.svg",
+            "title": "Kids Electric Car",
+            "price": 960
+        },
+        {
+            "id": 6,
+            "image": "jsonImages/product-sneaker.svg",
+            "title": "Jr. Zoom Soccer Cleats",
+            "price": 100
+        },
+        {
+            "id": 7,
+            "image": "jsonImages/product-game.svg",
+            "title": "GP11 Shooter USB Gamepad",
+            "price": 660
+        },
+        {
+            "id": 8,
+            "image": "jsonImages/product-sweater.svg",
+            "title": "Quilted Satin Jacket",
+            "price": 660
+        }
+    ],
+    "featured": [
+        {
+            "id": 1,
+            "image": "jsonImages/ps.svg",
+            "title": "PlayStation 5",
+            "desc": "Black and White version of the PS5 coming out on sale.",
+            "link": "/"
+        },
+        {
+            "id": 2,
+            "image": "jsonImages/hat.svg",
+            "title": "Women’s Collections",
+            "desc": "Featured woman collections that give you another vibe.",
+            "link": "/"
+        },
+        {
+            "id": 3,
+            "image": "jsonImages/speakers.svg",
+            "title": "Speakers",
+            "desc": "Amazon wireless speakers.",
+            "link": "/"
+        },
+        {
+            "id": 4,
+            "image": "jsonImages/perfume.svg",
+            "title": "Perfume",
+            "desc": "GUCCI INTENSE OUD EDP",
+            "link": "/"
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "image": "jsonImages/icon-delivery.svg",
+            "title": "free and fast delivery",
+            "paragraph": "Free delivery for all orders over $140"
+        },
+        {
+            "id": 2,
+            "image": "jsonImages/icon-customer.svg",
+            "title": "24/7 CUSTOMER SERVICE",
+            "paragraph": "Friendly 24/7 customer support"
+        },
+        {
+            "id": 3,
+            "image": "jsonImages/shield-tick.svg",
+            "title": "MONEY BACK GUARANTEE",
+            "paragraph": "We reurn money within 30 days"
         }
     ]
 }
