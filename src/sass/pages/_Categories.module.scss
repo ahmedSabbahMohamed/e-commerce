@@ -1,2 +1,48 @@
 @import '../helpers/colors';
 
+.categoriesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.categories {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-flow: row wrap;
+    margin-bottom: 140px;
+}
+
+.square {
+    display: flex;
+    width: 170px;
+    height: 145px;
+    padding: 25px 56px 24px 55px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    .squareText {
+        color: $black;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+    &:nth-child(4) {
+        background-color: $red;
+        .squareText {
+            color: $white;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .categories {
+        align-items: center;
+        justify-content: center;
+    }
+}
