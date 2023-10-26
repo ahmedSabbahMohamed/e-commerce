@@ -3,13 +3,13 @@
 import { useEffect, useState } from "react"
 import styles from "@/sass/pages/_Today.module.scss"
 import Image from "next/image"
-import today from "@/assets/images/today.svg"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import leftArrow from "@/assets/images/left-icon.png"
 import rightArrow from "@/assets/images/right-icon.png"
 import SectionHeader from "./SectionHeader"
+import Card from "./Card"
 
 function Today() {
 
@@ -74,84 +74,55 @@ function Today() {
     }, [])
 
   return (
-    <>
-    <div className={styles.todayContent}>
+    <div className="container">
+      
+      <div className={styles.todayContent}>
 
-        <div className="container">
+          <div>
 
-            {/* TODAY'S */}
-            <SectionHeader title={"Today's"} header={"Flash Sales"} />
+              {/* TODAY'S */}
+              <SectionHeader title={"Today's"} header={"Flash Sales"} />
 
-        </div>
+          </div>
 
-        <div className={styles.test}>
-            <div className="container">
+          <div className={styles.test}>
+              <div>
 
-                <div className="today-slider">
-                    <Slider {...settings}>
+                  <div className="today-slider">
+                      <Slider {...settings}>
 
-                        {
-                            card
-                            &&
-                            card.map(card => {
-                                return (
-                                    <div>
-                                        <div key={card.id} className={styles.card}>
-
-                                            {/* CARD IMAGE */}
-                                            <div className={styles.cardImage}>
-                                                <img src={card.image} alt="card-image" />
-                                            </div>
-
-                                            {/* CARD BODY */}
-                                            <div className={styles.cardBody}>
-
-                                                {/* CARD TITLE */}
-                                                <div className={styles.cardTitle}>
-                                                    <h3>{card.title}</h3>
-                                                </div>
-
-                                                {/* PRICE */}
-                                                <div className={styles.cardPrice}>
-                                                    <span>${card.price1}</span>
-                                                    <span>${card.price2}</span>
-                                                </div>
-
-                                                {/* CARD STARS */}
-                                                {/* <div className={styles.cardStars}>
-                                                    <img src={} alt="" />
-                                                    <img src={} alt="" />
-                                                    <img src={} alt="" />
-                                                    <img src={} alt="" />
-                                                    <img src={} alt="" />
-                                                </div> */}
-                                            </div>
-
-                                            {/* DISCOUNT */}
-                                            <div className={styles.cardDiscount}>
-                                                    {card.discount}%
-                                            </div>
-                                        </div>
+                          {
+                              card
+                              &&
+                              card.map(card => {
+                                  return (
+                                    <div key={card.id} className={styles.cardContainer}>
+                                      
+                                      <Card image={card.image} title={card.title} price1={card.price1} price2={card.price2} discount={card.discount} />
+                                      
+                                      <div className={styles.cardDiscount}>
+                                              {card.discount}%
+                                      </div>
                                     </div>
-                                )
-                            })
-                        }
-                    </Slider>
-                </div>
+                                  )
+                              })
+                          }
+                      </Slider>
+                  </div>
 
 
-                {/* <Slider {...settings}>
+                  {/* <Slider {...settings}>
 
-                </Slider> */}
-            </div>
-        </div>
+                  </Slider> */}
+              </div>
+          </div>
 
+      </div>
         {/* VIEW ALL PRODUCTS */}
         <div className={styles.viewAllproducts}>
           <button>View All Products</button>
         </div>
     </div>
-    </>
   )
 }
 
