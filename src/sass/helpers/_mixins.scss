@@ -20,3 +20,15 @@
     flex-direction: column;
     gap: 60px;
 }
+
+@mixin responsiveFlex {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-flow: row wrap;
+}
+
+@mixin center {
+    align-items: center;
+    justify-content: center;
+}

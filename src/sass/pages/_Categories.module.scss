@@ -7,10 +7,7 @@
 
 .categories {
     margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    flex-flow: row wrap;
+    @include responsiveFlex;
 }
 
 .square {
@@ -38,9 +35,8 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 789px) {
     .categories {
-        align-items: center;
-        justify-content: center;
+        @include center;
     }
 }

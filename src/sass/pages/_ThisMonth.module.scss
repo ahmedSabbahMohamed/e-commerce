@@ -8,12 +8,21 @@
 .thisMonthHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.viewAll {
+    button {
+        margin-top: 0;
+    }
 }
 
 .cardContainer {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    @include responsiveFlex
+}
+
+@media (max-width: 1024px) {
+    .cardContainer {
+        @include center;
+    }
 }

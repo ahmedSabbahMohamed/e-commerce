@@ -6,13 +6,15 @@
 }
 
 .productsCards {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    @include responsiveFlex;
 }
 
 .viewAllProducts {
     text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .productsCards {
+        @include center;
+    }
 }
