@@ -98,7 +98,7 @@ function Today() {
                                   return (
                                     <div key={card.id} className={styles.cardContainer}>
                                       
-                                      <Card image={card.image} title={card.title} price1={card.price1} price2={card.price2} discount={card.discount} />
+                                      <Card image={card.image} title={card.title} price1={card.price1} price2={`$${card.price2}`} />
                                       
                                       <div className={styles.cardDiscount}>
                                               {card.discount}%
