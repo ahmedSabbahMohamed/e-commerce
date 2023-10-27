@@ -31,7 +31,7 @@ function Products() {
               &&
               products.map(card => {
                 return (
-                  <div>
+                  <div key={card.id}>
                     <Card image={card.image} title={card.title} price1={card.price} />
                   </div>
                 )

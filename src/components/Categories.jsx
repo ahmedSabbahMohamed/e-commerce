@@ -32,7 +32,6 @@ function Categories() {
                       &&
                       categories.map(categ => {
                         return (
-                          <>
                             <div key={categ.id} className={styles.square}>
 
                                 {/* SQUAR IMAGE */}
@@ -45,7 +44,6 @@ function Categories() {
                                   <h4>{categ.text}</h4>
                                 </div>
                             </div>
-                          </>
                         )
                       })
                     }
