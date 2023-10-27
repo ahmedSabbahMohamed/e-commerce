@@ -22,7 +22,7 @@ function Card({ image, title, price1, price2 }) {
                 {/* PRICE */}
                 <div className={styles.cardPrice}>
                     <span>${price1}</span>
-                    <span>${price2}</span>
+                    <span>{price2}</span>
                 </div>
 
                 {/* CARD STARS */}
