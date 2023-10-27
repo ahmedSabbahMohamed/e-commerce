@@ -1,0 +1,22 @@
+@mixin btn ($paddingY: 16px, $paddingX: 48px) {
+    all: unset;
+    padding: $paddingY $paddingX;
+    border-radius: 4px;
+    background-color: $red;
+    color: $whiteSmoke;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    margin-top: 60px;
+    cursor: pointer;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+@mixin sectionStyle {
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
