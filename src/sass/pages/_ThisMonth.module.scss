@@ -1,28 +1,13 @@
 @import "../helpers/colors";
+@import "../helpers/mixins";
 
 .thisMonth {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    margin-bottom: 140px;
+    @include sectionStyle;
 }
 
 .thisMonthHeader {
     display: flex;
     justify-content: space-between;
-}
-
-.viewAll {
-    button {
-        all: unset;
-        padding: 16px 48px;
-        border-radius: 4px;
-        background: $red;
-        color: $whiteSmoke;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-    }
 }
 
 .cardContainer {

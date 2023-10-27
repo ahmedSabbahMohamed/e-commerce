@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import styles from "@/sass/pages/_Products.module.scss"
 import SectionHeader from "./SectionHeader"
 import Card from "./Card"
+import Btn from "./Btn"
 
 function Products() {
 
@@ -41,7 +42,7 @@ function Products() {
 
           {/* VIEW ALL PRODUCTS */}
           <div className={styles.viewAllProducts}>
-            <button>View All Products</button>
+            <Btn text={"View All Products"} />
           </div>
       </div>
     </div>

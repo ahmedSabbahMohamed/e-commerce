@@ -1,9 +1,8 @@
 @import '../helpers/colors';
+@import "../helpers/mixins";
 
 .categoriesSection {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+    @include sectionStyle;
 }
 
 .categories {
@@ -12,7 +11,6 @@
     align-items: flex-start;
     gap: 30px;
     flex-flow: row wrap;
-    margin-bottom: 140px;
 }
 
 .square {

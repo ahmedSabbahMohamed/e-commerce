@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import SectionHeader from "./SectionHeader"
 import styles from "@/sass/pages/_ThisMonth.module.scss"
 import Card from "./Card"
+import Btn from "./Btn"
 
 function ThisMonth() {
 
@@ -31,7 +32,7 @@ function ThisMonth() {
 
                     {/* VIEW ALL */}
                     <div className={styles.viewAll}>
-                        <button>View All</button>
+                        <Btn text={"View All"} />
                     </div>
                 </div>
 

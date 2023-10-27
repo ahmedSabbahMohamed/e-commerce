@@ -10,6 +10,7 @@ import leftArrow from "@/assets/images/left-icon.png"
 import rightArrow from "@/assets/images/right-icon.png"
 import SectionHeader from "./SectionHeader"
 import Card from "./Card"
+import Btn from "./Btn"
 
 function Today() {
 
@@ -74,18 +75,16 @@ function Today() {
     }, [])
 
   return (
-    <div className="container">
-      
-      <div className={styles.todayContent}>
+       <div className="container">
 
-          <div>
+         <div className={styles.todayContent}>
 
-              {/* TODAY'S */}
-              <SectionHeader title={"Today's"} header={"Flash Sales"} />
+            {/* TODAY'S */}
+            <SectionHeader title={"Today's"} header={"Flash Sales"} />
 
-          </div>
+            {/* body */}
+            <div className={styles.test}>
 
-          <div className={styles.test}>
               <div>
 
                   <div className="today-slider">
@@ -110,19 +109,60 @@ function Today() {
                       </Slider>
                   </div>
 
-
-                  {/* <Slider {...settings}>
-
-                  </Slider> */}
               </div>
-          </div>
+              {/* VIEW ALL PRODUCTS */}
+              <div className={styles.viewAllproducts}>
+                <Btn text={"View All Products"} />
+              </div>
+            </div>
+         </div>
+       </div>
 
-      </div>
-        {/* VIEW ALL PRODUCTS */}
-        <div className={styles.viewAllproducts}>
-          <button>View All Products</button>
-        </div>
-    </div>
+      // <div className="container">
+        
+      //   <div className={styles.todayContent}>
+
+      //       <div>
+
+      //           {/* TODAY'S */}
+      //           <SectionHeader title={"Today's"} header={"Flash Sales"} />
+
+      //       </div>
+
+      //       <div className={styles.test}>
+      //           <div>
+
+      //               <div className="today-slider">
+      //                   <Slider {...settings}>
+
+      //                       {
+      //                           card
+      //                           &&
+      //                           card.map(card => {
+      //                               return (
+      //                                 <div key={card.id} className={styles.cardContainer}>
+                                        
+      //                                   <Card image={card.image} title={card.title} price1={card.price1} price2={`$${card.price2}`} />
+                                        
+      //                                   <div className={styles.cardDiscount}>
+      //                                           {card.discount}%
+      //                                   </div>
+      //                                 </div>
+      //                               )
+      //                           })
+      //                       }
+      //                   </Slider>
+      //               </div>
+
+      //           </div>
+      //       </div>
+
+      //   </div>
+      //     {/* VIEW ALL PRODUCTS */}
+      //     <div className={styles.viewAllproducts}>
+      //       <Btn text={"View All Products"} />
+      //     </div>
+      // </div>
   )
 }
 

@@ -1,0 +1,6 @@
+@import "../helpers/colors";
+@import "../helpers/mixins";
+
+.btn {
+    @include btn()
+}

@@ -1,10 +1,9 @@
 @import "../helpers/colors";
+@import "../helpers/mixins";
 
 .todayContent {
     margin-top: 140px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    @include sectionStyle;
 }
 
 .cardContainer {
@@ -51,24 +50,4 @@
 
 .viewAllproducts {
     text-align: center;
-    margin-bottom: 140px;
-    button {
-        all: unset;
-        display: inline-flex;
-        padding: 16px 48px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 4px;
-        background-color: $red;
-        color: $whiteSmoke;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px; /* 150% */
-        margin-top: 60px;
-        cursor: pointer;
-        &:hover {
-            opacity: .8;
-        }
-    }
 }

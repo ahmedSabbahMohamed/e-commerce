@@ -17,7 +17,6 @@ function Categories() {
 
   return (
     <>
-    <div className="">
 
             <div className="container">
 
@@ -52,7 +51,6 @@ function Categories() {
               </div>
 
             </div>
-    </div>
     </>
   )
 }

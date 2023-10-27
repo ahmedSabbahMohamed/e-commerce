@@ -1,10 +1,8 @@
 @import "../helpers/colors";
+@import "../helpers/mixins";
 
 .products {
-    margin-bottom: 140px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+    @include sectionStyle;
 }
 
 .productsCards {
@@ -17,22 +15,4 @@
 
 .viewAllProducts {
     text-align: center;
-    button {
-        all: unset;
-        display: inline-flex;
-        padding: 16px 48px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 4px;
-        background-color: $red;
-        color: $whiteSmoke;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px; /* 150% */
-        cursor: pointer;
-        &:hover {
-            opacity: .8;
-        }
-    }
 }
